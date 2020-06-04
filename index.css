@@ -1,23 +1,48 @@
+/*CSS Reset - to wipe all the default styles*/
 * {
-    color: gray;
+	box-sizing:border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	box-sizing: border-box;
+  color: gray;
   }
 
   h1{
     margin:30px;
-    padding: 5px;
+    font-size: 50px;
+    font-family:'Architects Daughter', cursive;
+  }
+
+  h3{
+    display:flex;
+    justify-content:flex-end;
+    flex-direction:row;
+    padding: 2%;
+    margin: 2%;
+  }
+
+  .project-link{
+    display:flex;
+    justify-content:flex-end;
+    flex-direction:row;
   }
 
   .link {
-  margin: 10px;
-    border: 1px solid lightgray;
-    padding: 20px;
+    margin: 1%;
+    padding: 1%;
     border-radius: 20px;
     color: white;
     text-decoration: none;
-    margin-bottom: 20px;
+    margin-bottom: 2%;
     background-color:#0DEFE7;
   }
-
+  .page-info{
+  display:flex;
+}
   .link:hover {
       background-color: white;
       color: #0DEFE7;
@@ -27,4 +52,12 @@
 
     .heading{
         background-color: lightgray;
+        display:flex;
+    }
+
+    .header-img{
+        display:flex;
+        flex-direction:row;
+        width: 40%;
+        padding: 2%
     }
