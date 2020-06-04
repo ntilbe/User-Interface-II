@@ -7,47 +7,81 @@
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-	box-sizing: border-box;
   color: gray;
   }
 
+  html{
+    font-size: 62.5%; 
+    font-family: 'Architects Daughter', cursive;
+  }
   h1{
-    margin:30px;
+    margin:2% 1.5% 0 1.5% ;
     font-size: 50px;
     font-family:'Architects Daughter', cursive;
   }
-
-  h3{
+.page-info-text{
+  display:flex;
+  justify-content:space-around;
+  align-items: left;
+  flex-direction:column;
+  padding:5% 0 2% 9%;
+}
+.page-info-text p{
+  width: 30%;
+  font-size:15px;
+}
+  h3{  
     display:flex;
-    justify-content:flex-end;
     flex-direction:row;
-    padding: 2%;
-    margin: 2%;
   }
 
-  .project-link{
+
+  .nav-links{
     display:flex;
-    justify-content:flex-end;
-    flex-direction:row;
+    justify-content:space-between;
+    width:20%;
+    margin:0 1% 0 1.5%;
   }
 
   .link {
-    margin: 1%;
-    padding: 1%;
-    border-radius: 20px;
+    border-radius: 3px;
     color: white;
     text-decoration: none;
     margin-bottom: 2%;
     background-color:#0DEFE7;
   }
+
+  .project-link{
+    text-align: center;
+    width: 15%;
+    margin:0;
+  }
+
   .page-info{
   display:flex;
-}
+  }
+
   .link:hover {
       background-color: white;
       color: #0DEFE7;
       opacity: 0.8s;
       transition: 0.6s;
+    }
+
+    .projects-container{
+      padding:1% 0 0 0;
+      display:flex;
+      flex-wrap:wrap;
+      justify-content: space-around;
+    }
+
+    .project{
+      max-width:21%;
+      margin:0 0 2% 0;
+    }
+
+    .project img{
+      width:100%;
     }
 
     .heading{
@@ -60,4 +94,22 @@
         flex-direction:row;
         width: 40%;
         padding: 2%
+    }
+
+    .footer{
+      display:flex;
+      justify-content:center;
+      align-content:center;
+    }
+
+    @media(max-width: 800px){
+      .project{
+        max-width:27%;
+      }
+    }
+    
+    @media(max-width: 500px){
+      .project{
+        max-width:40%;
+      }
     }
