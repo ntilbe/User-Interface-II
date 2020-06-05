@@ -1,26 +1,22 @@
-/* general styling */
 
 * {
   box-sizing: border-box;
   padding: 0; 
   margin: 0; 
   max-width: 100%;
-  /* border: 1px solid red;     */
 }
 
 html{
   font-size: 62.5%; 
   font-family: 'Roboto', sans-serif;
 }
+
 body{
-  background-image: url(../images/MAM.min.jpg);
   background-repeat:no-repeat;
   background-size:cover;
   background-position:center;
   background-attachment:fixed;
-
   width: 100%; 
-
 }
 
 a { 
@@ -92,10 +88,7 @@ h1{
 }
 
 /* project photo gallery styling*/
-
-
 .container{
-  /* background-color: lightsteelblue; */
   border-color: green;
   width: 100%;
   padding: 2%;
@@ -193,6 +186,5 @@ footer a:hover {
   footer a{
       font-size: 1.3rem; 
   }
-
 
 }
