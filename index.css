@@ -1,115 +1,198 @@
-/*CSS Reset - to wipe all the default styles*/
+/* general styling */
+
 * {
-	box-sizing:border-box;
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-  color: gray;
-  }
-
-  html{
-    font-size: 62.5%; 
-    font-family: 'Architects Daughter', cursive;
-  }
-  h1{
-    margin:2% 1.5% 0 1.5% ;
-    font-size: 50px;
-    font-family:'Architects Daughter', cursive;
-  }
-.page-info-text{
-  display:flex;
-  justify-content:space-around;
-  align-items: left;
-  flex-direction:column;
-  padding:5% 0 2% 9%;
+  box-sizing: border-box;
+  padding: 0; 
+  margin: 0; 
+  max-width: 100%;
+  /* border: 1px solid red;     */
 }
-.page-info-text p{
-  width: 30%;
-  font-size:15px;
+
+html{
+  font-size: 62.5%; 
+  font-family: 'Roboto', sans-serif;
 }
-  h3{  
-    display:flex;
-    flex-direction:row;
-  }
+body{
+  background-image: url(../images/MAM.min.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
 
+  width: 100%; 
 
-  .nav-links{
-    display:flex;
-    justify-content:space-between;
-    width:20%;
-    margin:0 1% 0 1.5%;
-  }
+}
 
-  .link {
-    border-radius: 3px;
-    color: white;
-    text-decoration: none;
-    margin-bottom: 2%;
-    background-color:#0DEFE7;
-  }
+a { 
+  text-decoration: none;
+  color:black; 
+}
+a:visited{
+  text-decoration: none;
+  color: black;
+}
 
-  .project-link{
-    text-align: center;
-    width: 15%;
-    margin:0;
-  }
+/* header styling*/ 
 
-  .page-info{
+/* nav styles */
+header nav{
+  position: fixed; 
+  width: 100%;
+  background-color: lightsteelblue;
   display:flex;
+  justify-content: space-between;
+}
+
+.title{
+  width: 25%;
+}
+
+h1{
+  font-size: 3rem; 
+}
+.navLinks {
+  width: 45%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.navLinks a{
+  font-size: 2rem;
+}
+
+.navLinks a:hover{
+  font-size: 2.2rem; 
+}
+
+
+/* aboutMe styling*/
+.aboutMeContainer{
+  height: 70vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.mainTitles{
+  text-align: center; 
+}
+
+.mainTitles h2{
+  font-size: 8rem;
+}
+.mainTitles a{
+  font-size: 4rem;
+  background-color: lightsteelblue;
+  border-radius: 0.5rem;
+  opacity: 75%;
+}
+.mainTitles a:hover{
+  font-size: 4.5rem;
+}
+
+/* project photo gallery styling*/
+
+
+.container{
+  /* background-color: lightsteelblue; */
+  border-color: green;
+  width: 100%;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+}
+.fourProjects{
+  padding: 3%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.fourProjects div{
+  padding: 1%;
+  width: 21%; 
+}
+.fourProjects div:hover{
+  width: 22%; 
+}
+
+.container div p{
+  text-align: center;
+  font-size: 2rem;
+  
+  background-color: lightsteelblue;
+  opacity: 75%;
+  border-radius: .5rem;
+}
+
+/* footer styling */ 
+footer{
+  background-color: wheat;
+  padding: 2%;
+  text-align: center; 
+}
+footer div{
+  padding:1%; 
+  display: flex; 
+  justify-content: center;
+  flex-direction: column; 
+}
+footer h3{
+  font-size: 2rem;
+}
+footer a {
+  font-size: 1.5rem; 
+}
+footer a:hover {
+  font-size: 1.7rem; 
+}
+
+
+
+/* media queries */
+
+/* 800px */
+@media (max-width: 800px){
+  .navLinks a {
+      font-size: 1.5rem; 
   }
 
-  .link:hover {
-      background-color: white;
-      color: #0DEFE7;
-      opacity: 0.8s;
-      transition: 0.6s;
-    }
+  .mainTitles h2{
+      font-size: 7rem;
+  }
+  .mainTitles a{
+      font-size: 3rem;
+  }
+  .mainTitles a:hover{
+      font-size: 3.5rem;
+  }
 
-    .projects-container{
-      padding:1% 0 0 0;
-      display:flex;
-      flex-wrap:wrap;
-      justify-content: space-around;
-    }
+  .fourProjects div{
+      width: 27.5%; 
+  }
+  .fourProjects div:hover{
+      width: 28.5%; 
+  }
+  .container div p{
+      font-size: 1.8rem;
+  }
+}
 
-    .project{
-      max-width:21%;
-      margin:0 0 2% 0;
-    }
+/* 500px */
+@media (max-width: 500px){
+  .fourProjects div{
+      width: 41%; 
+  }
+  .fourProjects div:hover{
+      width: 42%; 
+  }
 
-    .project img{
-      width:100%;
-    }
+  footer h3{
+      font-size: 1.6rem; 
+  }
+  footer a{
+      font-size: 1.3rem; 
+  }
 
-    .heading{
-        background-color: lightgray;
-        display:flex;
-    }
 
-    .header-img{
-        display:flex;
-        flex-direction:row;
-        width: 40%;
-        padding: 2%
-    }
-
-    .footer{
-      display:flex;
-      justify-content:center;
-      align-content:center;
-    }
-
-    @media(max-width: 800px){
-      .project{
-        max-width:27%;
-      }
-    }
-    
-    @media(max-width: 500px){
-      .project{
-        max-width:40%;
-      }
-    }
+}
